@@ -1,0 +1,27 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.env
+
+# Local data outputs
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+reports/figures/*
+reports/*.csv
+reports/*.json
+
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!reports/figures/.gitkeep
+

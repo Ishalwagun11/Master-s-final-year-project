@@ -1,0 +1,21 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: political_credibility_db
+    environment:
+      POSTGRES_USER: credibility
+      POSTGRES_PASSWORD: credibility
+      POSTGRES_DB: credibility
+    ports:
+      - "5432:5432"
+    volumes:
+      - credibility_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U credibility -d credibility"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  credibility_pgdata:
+

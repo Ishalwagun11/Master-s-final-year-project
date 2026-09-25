@@ -1,0 +1,50 @@
+sources:
+  - id: guardian
+    name: The Guardian
+    country: UK
+    politics_feed_url: "https://www.theguardian.com/politics/rss"
+    enabled: true
+    notes: "RSS metadata only."
+
+  - id: bbc
+    name: BBC News
+    country: UK
+    politics_feed_url: "https://feeds.bbci.co.uk/news/politics/rss.xml"
+    enabled: true
+    notes: "RSS metadata only."
+
+  - id: sky
+    name: Sky News
+    country: UK
+    politics_feed_url: "https://feeds.skynews.com/feeds/rss/politics.xml"
+    enabled: true
+    notes: "RSS metadata only."
+
+  - id: telegraph
+    name: The Telegraph
+    country: UK
+    politics_feed_url: null
+    enabled: false
+    notes: "Verify current official politics RSS URL before enabling."
+
+  - id: times
+    name: The Times
+    country: UK
+    politics_feed_url: null
+    enabled: false
+    notes: "Verify RSS availability and terms before enabling."
+
+  - id: reuters_uk
+    name: Reuters UK
+    country: UK
+    politics_feed_url: null
+    enabled: false
+    notes: "Reuters feed availability changes; verify official RSS source before enabling."
+
+  - id: ft
+    name: Financial Times
+    country: UK
+    politics_feed_url: null
+    enabled: false
+    notes: "Verify RSS availability and terms before enabling."
+

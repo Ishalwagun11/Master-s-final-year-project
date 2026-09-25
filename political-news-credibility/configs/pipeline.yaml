@@ -1,0 +1,28 @@
+ingestion:
+  schedule_minutes: 30
+  request_timeout_seconds: 20
+  max_retries: 3
+  user_agent: "OxfordBrookesDissertationBot/0.1 RSS metadata research"
+
+nlp:
+  sentiment_model: "vader"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  embedding_dimensions: 384
+
+clustering:
+  similarity_threshold: 0.82
+  publication_window_hours: 48
+  minimum_distinct_sources: 3
+  disagreement_variance_threshold: 0.15
+
+prediction:
+  nearest_neighbours: 10
+  minimum_historical_matches: 3
+  confidence:
+    low_max_matches: 3
+    medium_max_matches: 7
+
+resolution:
+  tracking_window_hours: 72
+  minimum_followup_sources: 3
+
